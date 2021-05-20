@@ -1,0 +1,255 @@
+/* rubik-regular - latin */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Rubik'),
+         url(/fonts/rubik-v12-latin-regular.woff2); 
+  }
+
+/* Futura-bold */
+@font-face {
+    font-family: 'Futura';
+    font-style: bold;
+    font-weight: 600;
+    src: local('Futura'),
+         url(/fonts/FuturaLT-Bold.woff2); 
+  }
+
+
+/** body layout **/
+body {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    color: #182955;
+    background-color: #fcfcfe;
+}
+
+body a {
+	text-decoration: none;
+	color: #182955;
+}
+
+body a:hover {
+	color: #226D3F;
+}
+
+.navigation a {
+	color: #686f94;
+}
+
+/* For mobile: */
+@media (max-width: 998px) {
+    body {
+        margin: 2em;
+    }
+}
+
+/** navbar **/
+.navigation {
+    display: flex;
+    align-items: stretch;
+    min-height: 3.25rem;
+    max-width: 1200px;
+    margin: 0px auto;
+  } 
+
+.nav-icon {
+    margin: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: auto;
+}
+  
+.nav-links {
+    display: flex;
+    margin: 1em;
+    gap: 3em;
+    justify-content: flex-end;
+    margin-left: auto;
+    font-size: 18px;
+}  
+
+/* navbar mobile*/
+@media (max-width: 998px) {
+    .nav-links {
+        gap: 0.5em;
+        font-size: 14px;
+    }
+    
+    .nav-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav-links p {
+        gap: 0em;
+        margin: 1px !important;
+    }
+}
+
+/** Hero Section **/
+
+.hero-section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.welcome {
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+.welcome h1 {
+    font-family: 'Futura';
+    font-style: bold;
+    font-weight: 600;
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+.welcome h2 {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 40px;
+    max-width: 16em;
+    margin-bottom: 0.5em;
+    color: #686f94;
+}
+
+.welcome h4 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0px;
+    color: #686f94;   
+}
+
+@media (min-width: 998px) {
+    .welcome {
+        padding: 20px;
+    }
+}
+/** content section with links to blog and garden **/
+
+.content-section {
+    margin: 0px auto;
+    max-width: 1200px;
+    display: grid;
+    gap: 2.25em;
+    grid-template-columns: 3fr 5fr;
+}
+
+.content-section h2 {
+    font-size: 3em;
+}
+
+.content-section h4 {
+    font-size: 1.25em;
+    color: #686f94;
+}
+
+
+.blog-post-list {
+    border: 1px solid rgba(25, 22, 29, 0.08);
+    border-radius: 14px;
+    background-color: #FFFFFF;
+}
+
+.blog-post-list * {
+    margin: 25px;
+}
+
+.blog-post-list a {
+	margin: 0px;
+}
+
+.blog-card-title {
+    font-size: 2em;
+}
+
+.blog-list-title {
+    margin-left: 75px;
+
+}
+
+.blog-card-date {
+    color: #686f94;
+}
+
+
+@media (min-width: 998px) {
+    .content-section {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 998px) {
+    .content-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.garden-list-title, .garden-list-subtitle {
+    margin-left: 20px;
+}
+
+.garden-card {
+    border: 1px solid rgba(25, 22, 29, 0.08);
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    margin: 20px 20px 20px 0px;
+}
+
+.garden-card h3,p {
+    margin: 20px;
+}
+
+.garden-card-tags {
+    margin-top: 0px;
+}
+
+.garden-card-header {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.garden-card-date {
+    margin-left: auto;
+    color: #686f94;
+    font-size: 12px;
+    min-width: 10em;
+}
+
+/** footer **/
+
+.footer {
+    height: 3em;
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+.footer-name {
+    margin-top: 4em;
+}
+
+/** CSS for tagpills **/
+
+button.tc-tag-label, span.tc-tag-label {
+    border-radius: 2px;
+    background-color: #cdffcd;
+		display: inline-block;
+    padding: 0.16em 0.7em;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #ffffff;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
